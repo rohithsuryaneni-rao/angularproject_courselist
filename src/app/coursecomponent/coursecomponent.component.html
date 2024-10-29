@@ -1,0 +1,14 @@
+<p>Home page</p>
+<h4>Child component</h4>
+
+<div class="main">
+    <ul *ngFor="let course of parentdata">
+        <div class="child">
+            <h3><li> 
+                <img [src]="course.courseimage" alt="{{course.courseimage}}" class="imagec">
+                <span *ngIf="course.price>0; else ElseBlock" style="color: red;">{{course.name}} <br>  &nbsp;{{ course.description }} <br> &nbsp;{{ course.price }}</span>
+                <ng-template #ElseBlock><span style="color: rgb(204, 204, 86);">{{course.name}} <br> &nbsp;{{ course.description }} <br> &nbsp;{{ course.price }}</span></ng-template> </li>
+            </h3>
+        </div>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+body
+{
+    background-color: rgb(167, 219, 221);
+}
+.coursebutton{
+    height: 30px;
+    width: 200px;
+    margin: 8px 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+}
